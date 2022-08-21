@@ -1511,6 +1511,7 @@ section.backg,
   display: block;
   width: calc(100% - 20px);
   padding: 15px 0;
+  line-height: 24px;
 }
 
 /* Section 3*/
@@ -1575,6 +1576,7 @@ section.backg,
   font-size: 14px;
   align-items: baseline;
   display: flex;
+  line-height: 26px;
 }
 
 .ItemProduct .contentProduct li::before {
@@ -1617,8 +1619,10 @@ section.backg,
   width: auto;
 }
 
-.slick-dots {
-  bottom: -70px
+.section-5 .slick-dots {
+  bottom: -70px;
+  text-align: left;
+  padding-left: 20px;
 }
 
 .boxCarousel {
@@ -1637,7 +1641,11 @@ section.backg,
 
 .titleCarousel {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 700;
+}
+
+.boxCarousel p {
+  line-height: 26px;
 }
 
 .slick-next,
@@ -1711,4 +1719,23 @@ section.backg,
   padding: 0 25px 0 25px;
   font-size: 22px;  
   font-weight: 500;
+}
+
+/*Section 7*/
+.level7{
+  color: #fff;
+  margin-left: 50px;
+}
+
+.section-7 .slick-dots {
+  bottom: -70px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+/*Section 8*/
+
+.level8 {
+  width: 90%;
+  margin-right: 40px;
 }
