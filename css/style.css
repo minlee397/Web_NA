@@ -51,8 +51,8 @@ a {
 }
 
 a:hover {
-  color: #0056b3;
-  text-decoration: underline;
+  color: #fba70b;
+  text-decoration: none;
 }
 
 a:not([href]):not([tabindex]) {
@@ -83,24 +83,6 @@ img {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -1168,7 +1150,6 @@ input[type="button"].btn-block {
     background: #000 !important;
     position: relative;
     top: 0;
-    padding: 10px 15px;
   }
 }
 
@@ -1374,7 +1355,7 @@ section.backg,
   padding-bottom: 100px;
 }
 
-.slider-container1{
+.slider-container1 {
   padding-bottom: 100px;
 }
 
@@ -1410,6 +1391,10 @@ section.backg,
   width: 50%;
   position: relative;
   z-index: 10
+}
+
+.slide__content .slide__images-heading{
+  margin-bottom: 35px;
 }
 
 .slide__content .slide__text-heading h2 {
@@ -1480,6 +1465,10 @@ section.backg,
   width: 70%;
 }
 
+.level2 {
+  margin-right: 90px;
+}
+
 .title-level1 h2 {
   font-size: 40px;
   line-height: 60px;
@@ -1488,7 +1477,7 @@ section.backg,
 .title-level1 h3 {
   font-size: 25px;
   font-weight: unset;
-  line-height: 38px;
+  line-height: 36px;
 }
 
 .title-level1 .content ul li {
@@ -1701,7 +1690,7 @@ section.backg,
 }
 
 /* Section 6 */
-.listProduct .boxProduct .ItemProduct.ItemProductType2{
+.listProduct .boxProduct .ItemProduct.ItemProductType2 {
   box-shadow: 0 29px 49px rgb(0 0 0 / 10%);
   height: 330px;
 }
@@ -1711,18 +1700,18 @@ section.backg,
   color: #fff;
 }
 
-.ItemProductType2 .contentProduct li::before{
+.ItemProductType2 .contentProduct li::before {
   display: none;
 }
 
-.ItemProductType2 .titleProduct{
+.ItemProductType2 .titleProduct {
   padding: 0 25px 0 25px;
-  font-size: 22px;  
+  font-size: 22px;
   font-weight: 500;
 }
 
 /*Section 7*/
-.level7{
+.level7 {
   color: #fff;
   margin-left: 50px;
 }
@@ -1736,6 +1725,92 @@ section.backg,
 /*Section 8*/
 
 .level8 {
-  width: 90%;
   margin-right: 40px;
+}
+
+/* Section 9 */
+.slider-container9 {
+  background-color: #fafafa;
+}
+
+.level9 {
+  margin-left: 90px;
+}
+
+
+/* Footer */
+footer {
+  background-color: #1f242b;
+}
+
+.boxFooter {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.boxFooter1 {
+  padding-top: 85px;
+}
+
+.contract {
+  margin-bottom: 50px;
+}
+
+.textContract {
+  padding: 5px 0;
+}
+
+.text1Contract {
+  font-size: 14px;
+  color: #7f7d7d;
+}
+
+.text2Contract {
+  font-size: 24px;
+  color: #fff;
+}
+
+.boxSocial a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.footer_right {
+  display: flex;
+}
+
+.listFooter {
+  margin: 0 20px;
+}
+
+.listFooter .titleListFooter {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.listFooter .menuFooter li {
+  margin: 20px 0;
+}
+
+.listFooter .menuFooter li a {
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.boxFooter2 {
+  border-top: 1px solid #363c46;
+  padding: 25px 0;
+  align-items: center;
+}
+
+.footerLogo img {
+  width: 200px;
+}
+
+.copyRight {
+  font-size: 14px;
+  color: #fff;
 }
