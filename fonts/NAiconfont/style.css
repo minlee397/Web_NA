@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'NAiconfont';
+  src:  url('fonts/NAiconfont.eot?fgzxso');
+  src:  url('fonts/NAiconfont.eot?fgzxso#iefix') format('embedded-opentype'),
+    url('fonts/NAiconfont.ttf?fgzxso') format('truetype'),
+    url('fonts/NAiconfont.woff?fgzxso') format('woff'),
+    url('fonts/NAiconfont.svg?fgzxso#NAiconfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ic-"], [class*=" ic-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'NAiconfont' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ic-up-light:before {
+  content: "\e900";
+}
+.ic-down-light:before {
+  content: "\e913";
+}
+.ic-left-light:before {
+  content: "\e925";
+}
+.ic-right-light:before {
+  content: "\e926";
+}
+.ic-arrow-left:before {
+  content: "\e904";
+}
+.ic-arrow-right:before {
+  content: "\e906";
+}
+.ic-facebook-app-symbol:before {
+  content: "\e901";
+}
+.ic-google:before {
+  content: "\e902";
+}
+.ic-linkedin-big-logo:before {
+  content: "\e903";
+}
+.ic-pinterest-circular-logo-symbol:before {
+  content: "\e905";
+}
+.ic-twitter:before {
+  content: "\e908";
+}
+.ic-vimeo:before {
+  content: "\e909";
+}
+.ic-youtube-logo:before {
+  content: "\e90a";
+}
+.ic-line2:before {
+  content: "\e90b";
+}
+.ic-line3:before {
+  content: "\e90c";
+}
+.ic-call:before {
+  content: "\e907";
+}
+.ic-dig-info:before {
+  content: "\e9ce";
+}
+.ic-dig-list:before {
+  content: "\e9cf";
+}
+.ic-dig-references:before {
+  content: "\ea22";
+}
+.ic-report-new:before {
+  content: "\e9b7";
+}
+.ic-successful:before {
+  content: "\e994";
+}
+.ic-share:before {
+  content: "\e944";
+  color: #5e5e5e;
+}
+.ic-send:before {
+  content: "\e949";
+}
+.ic-LYCTHGT:before {
+  content: "\e9ba1";
+}
+.ic-BBBGHS:before {
+  content: "\e9161";
+}
+.ic-DNXXCT:before {
+  content: "\e97e1";
+}
+.ic-KHBTTB:before {
+  content: "\e9a41";
+}
+.ic-BDGNV:before {
+  content: "\e9271";
+}
+.ic-PC:before {
+  content: "\e9d61";
+}
+.ic-BCKQCT:before {
+  content: "\e9231";
+}
+.ic-PDNCT:before {
+  content: "\e9d81";
+}
+.ic-BCNXVT:before {
+  content: "\e9251";
+}
+.ic-BCTD:before {
+  content: "\e9261";
+}
+.ic-THTD:before {
+  content: "\ea161";
+}
+.ic-DNTLTS:before {
+  content: "\e97b1";
+}
+.ic-TTKHD:before {
+  content: "\ea1e1";
+}
+.ic-DGSDT:before {
+  content: "\e95c1";
+}
+.ic-DNMH:before {
+  content: "\e9761";
+}
+.ic-TTPDDT:before {
+  content: "\ea1f1";
+}
+.ic-KHCTDT:before {
+  content: "\e9a51";
+}
+.ic-PNMHTN:before {
+  content: "\e9dd1";
+}
+.ic-PDNHHS:before {
+  content: "\e9d91";
+}
+.ic-DXHTTM:before {
+  content: "\e9811";
+}
+.ic-LKHTD:before {
+  content: "\e9b51";
+}
+.ic-PYCSC:before {
+  content: "\e9e71";
+}
+.ic-QDPDNT:before {
+  content: "\e9e81";
+}
+.ic-YCHTBT:before {
+  content: "\ea4a1";
+}
+.ic-YCMNVL:before {
+  content: "\ea3f1";
+}
+.ic-completed:before {
+  content: "\e90d";
+}
+.ic-date:before {
+  content: "\e90e";
+}
+.ic-open-mail:before {
+  content: "\e90f";
+}
+.ic-search:before {
+  content: "\e910";
+}
+.ic-timeline:before {
+  content: "\e911";
+}
+.ic-book:before {
+  content: "\e912";
+}
+.ic-data-flow:before {
+  content: "\e914";
+}
+.ic-eye:before {
+  content: "\e915";
+}
+.ic-hospital:before {
+  content: "\e916";
+}
+.ic-lamp:before {
+  content: "\e917";
+}
+.ic-license:before {
+  content: "\e918";
+}
+.ic-management:before {
+  content: "\e919";
+}
+.ic-manufacturing:before {
+  content: "\e91a";
+}
+.ic-patient:before {
+  content: "\e91b";
+}
+.ic-server:before {
+  content: "\e91c";
+}
+.ic-summary:before {
+  content: "\e91d";
+}
