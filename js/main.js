@@ -19,15 +19,15 @@
 		infinite: true,
 		slidesToShow: 2, // Shows a three slides at a time
 		slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
-		dots: true // Adds the dots on the bottom
+		arrows: false,
+		dots: true, // Adds the dots on the bottom
 	});
 
 	$(".slick-carousel2").slick({
 		infinite: true,
-		slidesToShow: 2, // Shows a three slides at a time
+		slidesToShow: 1, // Shows a three slides at a time
 		slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
 		arrows: true, 
-		dots: true // Adds the dots on the bottom
 	});
 
 

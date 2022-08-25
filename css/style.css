@@ -1313,7 +1313,7 @@ input::placeholder {
 }
 
 [class*='ic-']{
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* Section 1 */
@@ -1663,11 +1663,6 @@ section.backg,
   line-height: 26px;
 }
 
-.slick-next,
-.slick-prev {
-  display: none !important;
-}
-
 .slick-dots li button {
   font-size: 0;
   line-height: 0;
@@ -1968,6 +1963,36 @@ footer {
 .slick-carousel2 {
   margin: 0 auto;
   width: 600px;
+  padding-bottom: 30px;
+}
+
+.avatarInfo {
+  margin-bottom: 40px;
+}
+
+button.slick-prev.slick-arrow{
+  bottom: 0px;
+  top: auto;
+  left: 0px;
+}
+
+button.slick-next.slick-arrow{
+  bottom: 0;
+  top: auto;
+  left: 40px;
+}
+
+.contentInfo {
+  font-size: 24px;
+  line-height: 34px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.nameInfo {
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
 }
 
 .slider-containerSanPham5 {
