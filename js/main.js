@@ -27,8 +27,20 @@
 		infinite: true,
 		slidesToShow: 1, // Shows a three slides at a time
 		slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
-		arrows: true, 
+		arrows: true,
 	});
+
+	$(".title-level1 .content_SanPham3 ul li").on("click", function () {
+		$(this).toggleClass("textColspan");
+		var icon = $(this).find("span")[0];
+		if ($(icon).hasClass("ic-right-light")) {
+			$(icon).removeClass("ic-right-light");
+			$(icon).addClass("ic-down-light");
+		} else {
+			$(icon).removeClass("ic-down-light");
+			$(icon).addClass("ic-right-light");
+		}
+	})
 
 
 })(jQuery);
