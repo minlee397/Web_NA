@@ -1312,6 +1312,10 @@ input::placeholder {
   font-size: 12px;
 }
 
+[class*='ic-']{
+  margin-left: 10px;
+}
+
 /* Section 1 */
 section.backg,
 .backg {
@@ -1961,6 +1965,11 @@ footer {
 }
 
 /*San Pham -- Section 5*/
+.slick-carousel2 {
+  margin: 0 auto;
+  width: 600px;
+}
+
 .slider-containerSanPham5 {
   background-image: url(../images/Img_SanPham8.png);
   background-size: cover;
