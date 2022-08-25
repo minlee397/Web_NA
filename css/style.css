@@ -1312,6 +1312,10 @@ input::placeholder {
   font-size: 12px;
 }
 
+[class*='ic-']{
+  margin-left: 10px;
+}
+
 /* Section 1 */
 section.backg,
 .backg {
@@ -1352,7 +1356,7 @@ section.backg,
   user-select: none;
   background: #fff;
   margin: 0 auto;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 .slider-container1 {
@@ -1361,6 +1365,14 @@ section.backg,
 
 .slide__bg {
   background-image: url(../images/TongQuan.png);
+  background-repeat: no-repeat;
+  background-position: left 0 bottom 0px;
+  background-size: cover;
+  min-height: calc(100vh - 125px);
+}
+
+.slide__bgHome {
+  background-image: url(../images/Img_SanPham1.png);
   background-repeat: no-repeat;
   background-position: left 0 bottom 0px;
   background-size: cover;
@@ -1380,6 +1392,20 @@ section.backg,
   background-size: contain;
 }
 
+.section-1 .slide__bg .slide__contentHome::before {
+  content: "";
+  float: right;
+  display: inline-block;
+  width: 594px;
+  height: 577px;
+  margin: -60px;
+  background-image: url(../images/Img_SanPham2.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+
 .slide__content {
   text-align: left;
   margin: auto;
@@ -1393,7 +1419,7 @@ section.backg,
   z-index: 10
 }
 
-.slide__content .slide__images-heading{
+.slide__content .slide__images-heading {
   margin-bottom: 35px;
 }
 
@@ -1409,8 +1435,8 @@ section.backg,
 }
 
 .slide__text-desc {
-  font-size: 18px;
-  line-height: 150%;
+  font-size: 26px;
+  line-height: 40px;
   margin: 30px 0 50px;
   color: #fff;
 }
@@ -1813,4 +1839,226 @@ footer {
 .copyRight {
   font-size: 14px;
   color: #fff;
+}
+
+
+/*San Pham -- Section 2*/
+.slider-containerSanPham1 {
+  padding-bottom: 50px;
+}
+
+.slide__SanPham2 {
+  align-items: flex-start;
+}
+
+.space--imgSanPham2 {
+  width: 80%;
+}
+
+.content_SanPham2 ul {
+  display: flex;
+}
+
+.content_SanPham2 ul li {
+  width: 50%;
+  padding-right: 35px;
+}
+
+.title-level1 .content_SanPham2 ul li::before {}
+
+.title-level1 .content_SanPham2 ul li span {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.listItemSanPham2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 35px;
+}
+
+.boxItemSanPham2 {
+  width: 33%;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
+
+.context1SanPham2 {
+  font-size: 16px;
+  line-height: 22px;
+  color: #696969;
+  padding-bottom: 5px;
+}
+
+.context2SanPham2 {
+  font-size: 14px;
+  line-height: 24px;
+  color: #696969;
+}
+
+/*SanPham - Section 3*/
+.slider-container3 {
+  background-color: #fafafa;
+}
+
+.title-level1 .content_SanPham3 ul li span {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 5px 0;
+}
+
+.title-SanPham3 {
+  width: 60%;
+  padding-right: 45px;
+}
+
+/*San Pham -- Section 4*/
+.backImg_SanPham4 {
+  background-image: url(../images/Img_SanPham5);
+}
+
+.title-SanPham4 h3 {
+  margin: 5px 0px;
+  font-size: 20px;
+}
+
+.title-SanPham4 h2 {
+  margin: 5px 0px;
+}
+
+.boxFeedBack {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 300px;
+}
+
+.itemFeedBack {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.itemFeedBack img {
+  margin-top: -17%;
+}
+
+.contentFeedBack {
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+.text1FeedBack {
+  font-size: 14px;
+  line-height: 25px;
+  color: #544837;
+}
+
+.text2FeedBack {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #544837;
+}
+
+/*San Pham -- Section 5*/
+.slick-carousel2 {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.slider-containerSanPham5 {
+  background-image: url(../images/Img_SanPham8.png);
+  background-size: cover;
+  height: 670px;
+}
+
+.slide__SanPham5 {
+  justify-content: space-between;
+}
+
+.boxSendInfo {
+  max-width: 470px;
+  text-align: center;
+  height: 615px;
+  margin-top: -295px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.headerSendInfo {
+  background-color: #fba70b;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.headerSendInfo h2 {
+  font-size: 36px;
+  line-height: 80px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.contentSendInfo input {
+  width: 400px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #f9f9f9;
+}
+
+.contentSendInfo textarea {
+  width: 400px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 30px;
+  height: 100px;
+  border: none;
+  background-color: #f9f9f9;
+  resize: none;
+}
+
+.contentSendInfo textarea::placeholder,
+.contentSendInfo input::placeholder {
+  font-size: 14px;
+  font-family: Roboto;
+}
+
+.mainSendInfo button {
+  width: 400px;
+  margin-top: 10px;
+  border-radius: 30px;
+  background-color: #fba70b;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  line-height: 52px;
+  cursor: pointer;
+}
+
+.mainSendInfo h3 {
+  color: #696969;
+  font-size: 14px;
+  line-height: 52px;
+}
+
+.mainSendInfo h3 span {
+  color: #de3030
+}
+
+/*San Pham -- Section 6*/
+.slide__SanPham6{
+  justify-content: center;
+}
+
+.slider-containerSanPham6{
+  padding-bottom: 0px;
+}
+
+.slide__contentSanPham6{
+  padding: 42px 0;
 }
