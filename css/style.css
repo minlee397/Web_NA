@@ -1498,12 +1498,15 @@ section.backg,
 .title-level1 h2 {
   font-size: 40px;
   line-height: 60px;
+  margin: 0;
 }
 
 .title-level1 h3 {
   font-size: 25px;
   font-weight: unset;
   line-height: 36px;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .title-level1 .content ul li {
@@ -2117,4 +2120,78 @@ button.slick-next.slick-arrow {
 
 .slide__contentSanPham6 {
   padding: 42px 0;
+}
+
+/* Gioi thieu - section 1 */
+.slider-containerGioiThieu1 {
+  background: #fafafa;
+}
+
+.imgIntroduce1 {
+  text-align: center;
+  padding-top: 18px;
+}
+
+.turnoverIntroduce1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.imgTurnover {
+  margin-bottom: 20px;
+}
+
+.imgTurnover img {
+  width: 60px;
+}
+
+.nameTurnover {
+  font-size: 18px;
+  line-height: 36px;
+  color: #544837;
+}
+
+.numberTurnover {
+  font-size: 40px;
+  line-height: 36px;
+  color: #544837;
+  font-family: Hobo Std;
+}
+
+.itemTurnover {
+  text-align: center;
+  margin: 0 50px;
+}
+
+/*Gioi thieu - section 3*/
+.levelGioiThieu3 {
+  width: 40%;
+  margin-left: 55px;
+}
+
+.itemGioiThieu3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.itemGioiThieu3 span {
+  font-size: 40px;
+  color: #2d32dc;
+}
+
+.contentGioiThieu3 {
+  margin-left: 10px;
+}
+
+.textGioiThieu3 {
+  font-size: 14px;
+  color: #544837;
+}
+
+.titleGioiThieu3 {
+  font-size: 20px;
+  color: #544837;
+  margin-bottom: 15px;
 }
