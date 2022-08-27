@@ -1178,7 +1178,7 @@ input[type="button"].btn-block {
 
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
   font-size: 14px;
-  padding-left: 35px;
+  padding: 0 20px;
   color: #fff;
   position: relative;
 }
@@ -1298,18 +1298,27 @@ input[type="button"].btn-block {
 
 .searchContent {
   margin-left: 200px;
+  align-items: center;
+  display: flex;
 }
 
 .searchContent .txtSearch {
   border-radius: 20px;
   border: 0;
-  padding: 5px 15px;
+  padding: 7px 15px;
   width: 200px;
   outline: 0;
 }
 
 input::placeholder {
   font-size: 12px;
+}
+
+.searchContent .ic-search {
+  color: #fff;
+  font-size: 25px;
+  margin-left: 5px;
+  cursor: pointer;
 }
 
 [class*='ic-'] {
@@ -1778,7 +1787,25 @@ footer {
 }
 
 .contract {
-  margin-bottom: 50px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.contract span {
+  font-size: 35px;
+}
+
+.contract .ic-call {
+  color: #f65d2d;
+}
+
+.contract .ic-open-mail {
+  color: #3fbc5f;
+}
+
+.contract .ic-share::before {
+  color: #1f72f7;
 }
 
 .textContract {
@@ -1795,6 +1822,10 @@ footer {
   color: #fff;
 }
 
+.boxSocial span {
+  font-size: 18px;
+}
+
 .boxSocial a {
   color: #fff;
   font-size: 18px;
@@ -1806,6 +1837,11 @@ footer {
 
 .listFooter {
   margin: 0 20px;
+}
+
+.listFooter .ic-line2 {
+  font-size: 35px;
+  color: #4941a2;
 }
 
 .listFooter .titleListFooter {
@@ -2194,4 +2230,76 @@ button.slick-next.slick-arrow {
   font-size: 20px;
   color: #544837;
   margin-bottom: 15px;
+}
+
+/*Lien He - Section 1*/
+.title-LienHe1 {
+  width: 55%;
+}
+
+/*Lien He - Section 2*/
+.slide__textLienHe2 {
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding-bottom: 70px;
+  align-items: flex-start;
+}
+
+.form_leftContact {
+  margin: 0 95px;
+  padding-top: 40px;
+}
+
+.form_leftContact h2 {
+  font-size: 25px;
+  color: #544837;
+  font-weight: normal;
+}
+
+.form_leftContact ul li {
+  padding: 10px 0;
+  color: #544837;
+  line-height: 20px;
+}
+
+.form_leftContact ul li span {
+  font-weight: bold;
+}
+
+.form_leftContact ul li .iconContact li {
+  display: inline-block;
+}
+
+.form_leftContact ul li .iconContact li a {
+  font-size: 25px;
+  color: #000;
+  padding-right: 20px;
+}
+
+.form_rightContact {
+  padding-top: 100px;
+}
+
+.form_rightContact input,
+.form_rightContact textarea {
+  width: 85%;
+  margin: 15px 0;
+  padding: 18px 15px;
+  border: 1px solid #e8e8e8;
+}
+
+.form_rightContact textarea {
+  padding: 10px 15px;
+  font-family: Roboto;
+  height: 100px;
+}
+
+.form_rightContact button {
+  width: 100px;
+  padding: 10px 0;
+  background-color: #0d13d7;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
 }
