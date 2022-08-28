@@ -43,7 +43,6 @@
 	});
 
 	$(".ic-search").click(function(){
-		$(".txtSearch").toggle();
-		$(".searchContent").toggleClass("active");
+		
 	});
 })(jQuery);

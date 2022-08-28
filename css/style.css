@@ -1233,24 +1233,17 @@ input[type="button"].btn-block {
   display: flex;
   position: relative;
   height: 35px;
-}
-
-.searchContent.active .txtSearch {
-  width: 240px;
-}
-
-.searchContent.active .ic-search {
-  color: #000;
-
+  min-width: 35px;
 }
 
 .searchContent .txtSearch {
-  border-radius: 20px;
-  border: 0px;
   padding: 10px 45px 10px 15px;
   width: 0;
+  border: 0px;
   outline: 0px;
+  border-radius: 20px;
   transition: .5s;
+  opacity: 0;
 }
 
 input::placeholder {
@@ -1265,6 +1258,17 @@ input::placeholder {
   position: absolute;
   top: 4px;
   right: 0;
+}
+
+
+.searchContent:hover .ic-search{
+  color: #000;
+}
+
+.searchContent:hover .txtSearch{
+  width: 240px;
+  padding: 10px 45px 10px 15px;
+  opacity: 1;
 }
 
 [class*="ic-"] {
