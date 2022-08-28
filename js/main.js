@@ -40,7 +40,10 @@
 			$(icon).removeClass("ic-down-light");
 			$(icon).addClass("ic-right-light");
 		}
-	})
+	});
 
-
+	$(".ic-search").click(function(){
+		$(".txtSearch").toggle();
+		$(".searchContent").toggleClass("active");
+	});
 })(jQuery);

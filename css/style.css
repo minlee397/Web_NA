@@ -1231,14 +1231,26 @@ input[type="button"].btn-block {
 .searchContent {
   align-items: center;
   display: flex;
+  position: relative;
+  height: 35px;
+}
+
+.searchContent.active .txtSearch {
+  width: 240px;
+}
+
+.searchContent.active .ic-search {
+  color: #000;
+
 }
 
 .searchContent .txtSearch {
   border-radius: 20px;
   border: 0px;
-  padding: 7px 15px;
-  width: 200px;
+  padding: 10px 45px 10px 15px;
+  width: 0;
   outline: 0px;
+  transition: .5s;
 }
 
 input::placeholder {
@@ -1246,10 +1258,13 @@ input::placeholder {
 }
 
 .searchContent .ic-search {
-  color: rgb(255, 255, 255);
+  color: #fff;
   font-size: 25px;
   margin-left: 5px;
   cursor: pointer;
+  position: absolute;
+  top: 4px;
+  right: 0;
 }
 
 [class*="ic-"] {
@@ -2168,6 +2183,7 @@ button.slick-next.slick-arrow {
   position: relative;
   background: #fff;
 }
+
 .ps-timeline-sec .container {
   position: relative;
 }
@@ -2179,16 +2195,18 @@ button.slick-next.slick-arrow {
   border-top: 1px solid #fff;
   list-style: none;
 }
+
 .ps-timeline-sec .container ol.ps-timeline li {
   float: left;
   width: 33%;
   padding-top: 30px;
   position: relative;
 }
+
 .ps-timeline-sec .container ol.ps-timeline li span {
-  font-size: 40px; 
+  font-size: 40px;
   font-family: Hobo Std;
-  color: #fff;    
+  color: #fff;
   text-align: right;
   padding-right: 35px;
   padding-top: 37px;
@@ -2207,31 +2225,44 @@ button.slick-next.slick-arrow {
   margin-bottom: 56px;
   width: 100%;
 }
+
 .ps-timeline-sec .container ol.ps-timeline li .img-handler-top img {
   display: table;
   margin: 0 auto;
 }
-.ps-timeline-sec .container ol.ps-timeline li [class*="img-handler-"] .handler-banner{ 
-  width:259px; 
+
+.ps-timeline-sec .container ol.ps-timeline li [class*="img-handler-"] .handler-banner {
+  width: 259px;
   height: 271px;
-  overflow: hidden; 
-  position: absolute; 
-  top:0; 
-  left: 63px; 
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 63px;
   border-radius: 50%;
   padding: 20px;
 }
-.ps-timeline-sec .container ol.ps-timeline li [class*="img-handler-"] .handler-banner>img{width: 100%; height: 100%; object-fit: contain;}
+
+.ps-timeline-sec .container ol.ps-timeline li [class*="img-handler-"] .handler-banner>img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot {
   position: absolute;
   margin-top: 80px;
   width: 100%;
 }
-.ps-timeline-sec .container ol.ps-timeline li .img-handler-bot .handler-banner{top:33px;}
+
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-bot .handler-banner {
+  top: 33px;
+}
+
 .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot img {
   display: table;
   margin: 0 auto;
 }
+
 .ps-timeline-sec .container ol.ps-timeline li p {
   text-align: center;
   width: 80%;
@@ -2239,16 +2270,24 @@ button.slick-next.slick-arrow {
   font-size: 14px;
   color: #544837;
 }
-.ps-timeline-sec .container ol.ps-timeline li p.title{color: #544837; font-size: 20px; margin-bottom: 25px;}
+
+.ps-timeline-sec .container ol.ps-timeline li p.title {
+  color: #544837;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
 .ps-timeline-sec .container ol.ps-timeline li .ps-top {
   position: absolute;
   bottom: 0;
   margin-bottom: 86px;
 }
+
 .ps-timeline-sec .container ol.ps-timeline li .ps-bot {
   position: absolute;
   margin-top: 110px;
 }
+
 @media screen and (max-width: 767px) {
   .ps-timeline-sec .container ol:before {
     background: #348e80;
@@ -2260,6 +2299,7 @@ button.slick-next.slick-arrow {
     top: 130px !important;
     left: 36px !important;
   }
+
   .ps-timeline-sec .container ol:after {
     background: #348e80;
     content: "";
@@ -2270,6 +2310,7 @@ button.slick-next.slick-arrow {
     top: inherit !important;
     left: 36px;
   }
+
   .ps-timeline-sec .container ol.ps-timeline {
     margin: 130px 0 !important;
     border-left: 2px solid #348e80;
@@ -2278,48 +2319,60 @@ button.slick-next.slick-arrow {
     border-top: 0 !important;
     margin-left: 25px !important;
   }
+
   .ps-timeline-sec .container ol.ps-timeline li {
     height: 220px;
     float: none !important;
     width: inherit !important;
   }
+
   .ps-timeline-sec .container ol.ps-timeline li:nth-child(2) .img-handler-bot img {
     width: 70px;
   }
+
   .ps-timeline-sec .container ol.ps-timeline li:last-child {
     margin: 0;
     bottom: 0 !important;
     height: 120px;
   }
+
   .ps-timeline-sec .container ol.ps-timeline li:last-child .img-handler-bot {
     bottom: 40px !important;
     width: 40% !important;
     margin-left: 25px !important;
     margin-top: 0 !important;
   }
+
   .ps-timeline-sec .container ol.ps-timeline li:last-child .img-handler-bot img {
     width: 100%;
   }
+
   .ps-timeline-sec .container ol.ps-timeline li:last-child .ps-top {
     margin-bottom: 0 !important;
     top: 20px;
     width: 50% !important;
   }
+
   .ps-timeline-sec .container ol.ps-timeline li span {
     left: 0 !important;
   }
+
   .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:before {
     content: none !important;
   }
+
   .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:after {
     content: none !important;
   }
+
   .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:before {
     content: none !important;
   }
+
   .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:after {
     content: none !important;
   }
+
   .ps-timeline-sec .container ol.ps-timeline li .img-handler-top {
     position: absolute !important;
     bottom: 150px !important;
@@ -2328,10 +2381,12 @@ button.slick-next.slick-arrow {
     margin-left: 35px !important;
     margin-bottom: 0 !important;
   }
+
   .ps-timeline-sec .container ol.ps-timeline li .img-handler-top img {
     margin: 0 auto !important;
     width: 80% !important;
   }
+
   .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot {
     position: absolute !important;
     bottom: 115px !important;
@@ -2340,18 +2395,21 @@ button.slick-next.slick-arrow {
     margin-left: 35px !important;
     margin-bottom: 0 !important;
   }
+
   .ps-timeline-sec .container ol.ps-timeline li p {
     text-align: left !important;
     width: 100% !important;
     margin: 0 auto !important;
     margin-top: 0px !important;
   }
+
   .ps-timeline-sec .container ol.ps-timeline li .ps-top {
     width: 60% !important;
     float: right !important;
     right: 0;
     top: -40px;
   }
+
   .ps-timeline-sec .container ol.ps-timeline li .ps-bot {
     width: 60% !important;
     float: right !important;
