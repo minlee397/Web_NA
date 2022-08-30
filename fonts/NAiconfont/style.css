@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'NAiconfont';
-  src:  url('fonts/NAiconfont.eot?hi47mx');
-  src:  url('fonts/NAiconfont.eot?hi47mx#iefix') format('embedded-opentype'),
-    url('fonts/NAiconfont.ttf?hi47mx') format('truetype'),
-    url('fonts/NAiconfont.woff?hi47mx') format('woff'),
-    url('fonts/NAiconfont.svg?hi47mx#NAiconfont') format('svg');
+  src:  url('fonts/NAiconfont.eot?442kwd');
+  src:  url('fonts/NAiconfont.eot?442kwd#iefix') format('embedded-opentype'),
+    url('fonts/NAiconfont.ttf?442kwd') format('truetype'),
+    url('fonts/NAiconfont.woff?442kwd') format('woff'),
+    url('fonts/NAiconfont.svg?442kwd#NAiconfont') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ic-menu:before {
+  content: "\e921";
+}
 .ic-operation:before {
   content: "\e91f";
 }
