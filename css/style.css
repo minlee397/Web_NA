@@ -3436,3 +3436,175 @@ button.slick-next.slick-arrow {
     margin-left: 30px;
   }
 }
+
+
+/* Tim Kiem - Section 1 */
+.Page_Search .slider-container {
+  padding: 0;
+}
+
+.Page_Search .slide__content {
+  padding: 80px 0;
+}
+
+.Page_Search .section-1 {
+  background-color: #000;
+}
+
+.inputBoxSearch {
+  position: relative;
+}
+
+.inputBoxSearch input {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  font-size: 40px;
+  line-height: 24px;
+  border: none;
+  border-bottom: 3px solid #b1b1b1;
+  outline: none;
+}
+
+.inputBoxSearch input:focus {
+  border-bottom: 3px solid #fff;
+}
+
+.inputBoxSearch input::placeholder {
+  font-size: 40px;
+  line-height: 24px;
+}
+
+.inputBoxSearch span {
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+.filterBoxSearch {
+  margin-top: 65px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.filterBoxSearch label {
+  font-size: 16px;
+  margin-right: 70px;
+  color: #fff;
+}
+
+.filterBoxSearch select {
+  width: 200px;
+  padding: 10px;
+  color: #fff;
+  background-color: #000;
+}
+
+.filterBoxSearch p {
+  margin-left: 35px;
+  font-size: 16px;
+  color: #fff;
+}
+
+/*Tim kiem - section 2*/
+.listSearchResult {
+  margin: 0 105px;
+}
+
+.searchResult{
+  margin-bottom: 50px;
+}
+
+.searchResult h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #0d13d7;
+}
+
+.searchResult a {
+  font-size: 20px;
+  line-height: 30px;
+  color: #2f281e;
+}
+
+.searchResult a:hover {
+  color: #2f281e;
+  text-decoration: underline;
+}
+
+.searchResult p {
+  font-size: 15px;
+  line-height: 36px;
+  color: #544837;
+}
+
+/*Tim kiem - Section 3*/
+.Page_Search .section-3 .slide__content {
+  padding: 0;
+  border-top: 3px solid #544837;
+}
+
+.listPagesSearch{
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.listPagesSearch ul li{
+  display: inline;
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.listPagesSearch ul li a{
+  color: #403b3b;
+}
+
+.listPagesSearch span{
+  margin: 0;
+  margin: 0 5px;
+  font-size: 20px;
+  color: #403b3b;
+  cursor: pointer;
+}
+
+.listPagesSearch ul li a:hover{
+  color: #0d13d7;
+  font-weight: bold;
+}
+
+.listPagesSearch span:hover{
+  color: #0d13d7;
+  font-weight: bold;
+}
+
+/*Tim kiem - Section 4*/
+.Page_Search .section-4 .slide__content {
+  padding: 80px 0;
+}
+
+.listKeyWord span{
+  font-size: 15px;
+  color: #544837;
+}
+
+.listKeyWord ul {
+  margin-top: 25px;
+}
+
+.listKeyWord ul li{
+  display: inline-block;
+  padding: 20px 50px;
+  border: 1px solid #544837;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.listKeyWord ul li a{
+  font-size: 25px;
+  color: #544837;
+}
