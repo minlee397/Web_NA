@@ -20,7 +20,6 @@
 	if (widthWindow < 768){
 		slidesToShow = 1;
 	}
-	
 
 	$(".slick-carousel").slick({
 		infinite: true,
@@ -33,6 +32,15 @@
 	});
 
 	$(".slick-carousel2").slick({
+		infinite: true,
+		slidesToShow: 1, // Shows a three slides at a time
+		slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
+		arrows: true,
+		autoplay: true,
+		autoplaySpeed: 2000
+	});
+
+	$(".slick-carousel3").slick({
 		infinite: true,
 		slidesToShow: 1, // Shows a three slides at a time
 		slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
