@@ -28,6 +28,7 @@ body {
   font-size: 14px;
   color: rgb(84, 72, 55);
   background-color: rgb(255, 255, 255);
+  position: relative;
 }
 
 [tabindex="-1"]:focus {
@@ -667,11 +668,9 @@ input[type="button"].btn-block {
   flex-direction: column;
   padding-left: 0px;
   margin-bottom: 0px;
-  margin-left: 100px;
+  margin-left: 5px;
   list-style: none;
 }
-
-.navbar-nav .nav-link {}
 
 .navbar-nav .dropdown-menu {
   position: static;
@@ -1212,7 +1211,6 @@ input[type="button"].btn-block {
 }
 
 .navbar-nav .menu-level1 {
-  display: none;
   position: absolute;
   left: 0px;
   top: 80px;
@@ -1222,6 +1220,9 @@ input[type="button"].btn-block {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 29px 49px;
   width: 1140px;
   padding: 20px 0;
+  max-height: 0;
+  visibility: hidden;
+          transition: max-height 1s ease-in;
 }
 
 .navbar-nav .menu-level1 li {
@@ -1262,7 +1263,9 @@ input[type="button"].btn-block {
 }
 
 .navbar-nav li:hover>.menu-level1 {
-  display: inherit;
+  max-height: 1000px;
+  display: block;
+  visibility: visible;  
 }
 
 .navbar-nav .menu-level1 .menu-level2 {
@@ -1276,24 +1279,20 @@ input[type="button"].btn-block {
   overflow:auto;
 }
 
-/* width */
 .navbar-nav .menu-level1 .menu-level2::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
 .navbar-nav .menu-level1 .menu-level2::-webkit-scrollbar-track {
   background: #f1f1f1; 
 }
  
-/* Handle */
 .navbar-nav .menu-level1 .menu-level2::-webkit-scrollbar-thumb {
   background: rgb(199, 199, 199); 
   border-radius: 20px;
 
 }
 
-/* Handle on hover */
 .navbar-nav .menu-level1 .menu-level2::-webkit-scrollbar-thumb:hover {
   background: rgb(139, 139, 139); 
 }
@@ -1302,6 +1301,31 @@ input[type="button"].btn-block {
 .navbar-nav .menu-level1 .menu-level2 li{
   max-width: unset;
   width: 100%;
+}
+
+.boxScrollTop{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(84, 72, 55);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.boxScrollTop:hover{
+  background-color: #0d13d7;
+}
+
+.boxScrollTop span{
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
 }
 
 .container_support {
@@ -1361,7 +1385,7 @@ input::placeholder {
 }
 
 .searchContent:hover .txtSearch {
-  width: 240px;
+  width: 210px;
   padding: 10px 45px 10px 15px;
   opacity: 1;
 }
