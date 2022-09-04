@@ -61,7 +61,7 @@
 		}
 	});
 
-	$(".ic-search").click(function(){
-		
+	$(".boxScrollTop").click(function(){
+		window.scrollTo({top: 0, behavior: 'smooth'});
 	});
 })(jQuery);
