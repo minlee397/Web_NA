@@ -1109,7 +1109,7 @@ input[type="button"].btn-block {
 
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
   font-size: 14px;
-  padding: 31px 20px;
+  padding: 31px 15px;
   color: rgb(255, 255, 255);
   position: relative;
 }
@@ -3635,7 +3635,7 @@ button.slick-next.slick-arrow {
   justify-content: center;
   align-items: center;
   background-color: #f0f4f8;
-  padding: 20px 0;
+  padding: 20px 40px;
 }
 
 .newsInfomation button {
@@ -3644,7 +3644,7 @@ button.slick-next.slick-arrow {
   outline: none;
   color: #fff;
   background-color: #fba70b;
-  cursor: pointer;
+  cursor: pointer;white-space: nowrap;
 }
 
 .newsInfomation span {
@@ -3658,20 +3658,46 @@ button.slick-next.slick-arrow {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 15px;height: 455px;
 }
-
+.newsBanner>div{width: 50%;}
 .newsBanner_images {
-  width: 50%;
-  height: 455px;
+  width: 100%;
+  height: 100%;
 }
-
+.newsBanner_images::after {
+  background-color: rgba(0, 0, 0, 0.35);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
 .newsBanner_left {
   background-color: #efeeea;
   position: relative;
   margin-right: 10px;
 }
+.newsBanner_images >a{    
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
+.newsBanner_images >a>img{ 
+  max-height: 100%;
+  object-fit: contain;    
+  -webkit-transition-duration: 800ms;
+  transition-duration: 800ms;
+}
+
+.newsBanner_images:hover >a>img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 .newsBanner_right {
   margin-left: 10px;
 }
@@ -3689,7 +3715,7 @@ button.slick-next.slick-arrow {
 .newsBanner_rightBottom {
   margin-top: 20px;
 }
-
+.newsBanner_right .newsBanner_images >a>img{max-height: unset; max-width: 100%;}
 .newsBanner-content {
   position: absolute;
   bottom: 30px;
@@ -3767,19 +3793,17 @@ button.slick-next.slick-arrow {
 }
 
 .boxNew_blog {
-  margin-right: 15px;
+  
+  width: 50%;
 }
-
-.boxNew_blog:last-child {
-  margin-right: 0;
-  margin-left: 15px;
-}
+.boxNew_blog:first-child>div{padding-right: 15px;}
+.boxNew_blog:last-child>div {padding-left: 15px;}
 
 .newBlog_image {
   height: 250px;
-  background-color: #efeeea;
+  background-color: #efeeea;    overflow: hidden;
 }
-
+.newBlog_image>img{max-height: 100%; max-height: 100%; object-fit: contain;}
 .boxNew_blog span {
   margin-top: 25px;
   display: block;
@@ -3794,9 +3818,9 @@ button.slick-next.slick-arrow {
   font-size: 24px;
   font-weight: bold;
   line-height: 36px;
-  color: #544837;
+  color: #544837;    line-height: normal;
 }
-
+.boxNew_blog a:hover h2 {color: #0d13d7;}
 .boxNew_blog h3 {
   font-size: 13px;
   font-weight: normal;
@@ -3811,18 +3835,19 @@ button.slick-next.slick-arrow {
 
 .listBlog .itemBlog {
   width: 50%;
-  padding-right: 35px;
+  padding-right: 20px;
   display: flex;
   align-items: center;
   margin-bottom: 35px;
 }
-
+.listBlog .itemBlog:nth-child(2n+1){padding-right: 15px;}
+.listBlog .itemBlog:nth-child(2n){padding-left: 15px;}
 .itemBlog_image {
   width: 125px;
   height: 90px;
-  background-color: #efeeea;
+  background-color: #efeeea;overflow: hidden;
 }
-
+.itemBlog_image>img{object-fit: contain; height: 100%; width: 100%;}
 .itemBlog_content {
   width: calc(100% - 125px);
   padding-left: 20px;
@@ -3848,7 +3873,7 @@ button.slick-next.slick-arrow {
 .blog_Subscribe {
   background-color: #efeeea;
   height: 452px;
-  text-align: center;
+  text-align: center;border-radius: 4px;
 }
 
 .blog_Subscribe h1 {
@@ -3890,8 +3915,13 @@ button.slick-next.slick-arrow {
   margin-top: 35px;
   height: 378px;
   background-color: #efeeea;
+  overflow: hidden;
+  padding: 20px 15px;
+  border-radius: 4px;
+  display: flex;align-items: center; background: #0d13d7;
 }
-
+.blog_adv>img{object-fit: contain; max-height: 100%;
+  max-width: 100%;}
 /*Tin Tuc - section 3*/
 .PageNews .section-3 {
   background-image: url(../images/Img_TinTuc1.jpg);
@@ -3959,7 +3989,8 @@ button.slick-next.slick-arrow {
   width: 350px;
   background-color: #efeeea;
 }
-
+.carouselBlog_image>a{width: 100%; height: 100%; overflow: hidden; display: inline-block;}
+.carouselBlog_image>a>img{object-fit: contain;height: 100%; }
 .carouselBlog span {
   margin-top: 25px;
   display: block;
@@ -4055,8 +4086,9 @@ button.slick-next.slick-arrow {
 .oldBlog_image {
   height: 250px;
   background-color: #efeeea;
+  overflow: hidden;
 }
-
+.oldBlog_image>img{width: 100%; height: 100%; object-fit: contain;}
 .boxOld_blog span {
   margin-top: 25px;
   display: block;
