@@ -49,6 +49,15 @@
 		autoplaySpeed: 2000
 	});
 
+	$(".listCarouselBlog").slick({
+		infinite: true,
+		slidesToShow: 3, // Shows a three slides at a time
+		slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
+		//arrows: true,
+		autoplay: true,
+		autoplaySpeed: 2000
+	});
+
 	$(".title-level1 .content_SanPham3 ul li").on("click", function () {
 		$(this).toggleClass("textColspan");
 		var icon = $(this).find("span")[0];
