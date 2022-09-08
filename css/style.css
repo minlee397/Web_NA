@@ -3914,7 +3914,7 @@ button.slick-next.slick-arrow {
   text-align: center;
 }
 
-.bigBlog_content{
+.bigBlog_content {
   padding-top: 200px;
 }
 
@@ -4000,11 +4000,11 @@ button.slick-next.slick-arrow {
   z-index: 2;
 }
 
-.listCarouselBlog button.slick-prev.slick-arrow:hover{
+.listCarouselBlog button.slick-prev.slick-arrow:hover {
   background-color: #000;
 }
 
-.listCarouselBlog button.slick-prev.slick-arrow::before{
+.listCarouselBlog button.slick-prev.slick-arrow::before {
   content: "\e925";
   font-family: NAiconfont;
   font-size: 15px;
@@ -4024,11 +4024,11 @@ button.slick-next.slick-arrow {
   z-index: 2;
 }
 
-.listCarouselBlog button.slick-next.slick-arrow:hover{
+.listCarouselBlog button.slick-next.slick-arrow:hover {
   background-color: #000;
 }
 
-.listCarouselBlog button.slick-next.slick-arrow::before{
+.listCarouselBlog button.slick-next.slick-arrow::before {
   content: "\e926";
   font-family: NAiconfont;
   font-size: 15px;
@@ -4078,4 +4078,243 @@ button.slick-next.slick-arrow {
   font-size: 13px;
   font-weight: normal;
   color: #544837;
+}
+
+/*Careers - section 1*/
+
+.PagesCareers .slide__content {
+  padding-top: 100px;
+}
+
+.TitleCareers {
+  text-align: center;
+}
+
+.TitleCareers h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.TitleCareers h3 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.TitleCareers img {
+  margin-top: 30px;
+  width: 500px;
+}
+
+/*Careers - section 2*/
+
+.contentCareers_2 h1,
+.contentCareers_2 h2,
+.contentCareers_2 p {
+  margin: 0;
+}
+
+.contentCareers_2 {
+  display: flex;
+  align-items: center;
+}
+
+.Careers_2-left {
+  width: 40%;
+}
+
+.Careers_2-left h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.Careers_2-right .item h2 {
+  font-size: 25px;
+}
+
+.Careers_2-right .item p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/*Careers - section 3*/
+.contentCareers_3 {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  flex-flow: row-reverse;
+  background-color: #e9f8ff;
+  padding: 15px 20px;
+}
+
+.contentCareers_3 img {
+  position: absolute;
+  left: 40px;
+  width: 450px;
+  bottom: 53px;
+}
+
+.contentCareers_3 h2 {
+  width: 60%;
+}
+
+.slideCareers_3 {
+  margin-top: 7%;
+}
+
+.contentCareers_3 h2 {
+  font-size: 25px;
+}
+
+/*Careers - section 4*/
+
+.contentCareers_4 h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+}
+
+.listCarouselCareers {
+  margin-top: 50px;
+}
+
+.carouselCareers img {
+  width: 1140px;
+  height: 600px;
+  background-size: cover;
+}
+
+.carouselCareers {
+  position: relative;
+}
+
+.CarouselCareers-content {
+  position: absolute;
+  right: 0px;
+  bottom: 60px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 15px 60px;
+  display: flex;
+  align-items: center;
+}
+
+.CarouselCareers-content::after {
+  /* content: ""; */
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.CarouselCareers-content h1 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.CarouselCareers-content span {
+  margin-left: 15px;
+  font-size: 16px;
+  width: 250px;
+}
+
+.listCarouselCareers button.slick-prev.slick-arrow {
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #0d13d7;
+  text-align: center;
+  transition-duration: 500ms;
+  z-index: 2;
+}
+
+.listCarouselCareers button.slick-prev.slick-arrow:hover {
+  background-color: #000;
+}
+
+.listCarouselCareers button.slick-prev.slick-arrow::before {
+  content: "\e925";
+  font-family: NAiconfont;
+  font-size: 15px;
+}
+
+.listCarouselCareers button.slick-next.slick-arrow {
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  left: unset;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #0d13d7;
+  text-align: center;
+  transition-duration: 500ms;
+  z-index: 2;
+}
+
+.listCarouselCareers button.slick-next.slick-arrow:hover {
+  background-color: #000;
+}
+
+.listCarouselCareers button.slick-next.slick-arrow::before {
+  content: "\e926";
+  font-family: NAiconfont;
+  font-size: 15px;
+}
+
+/*Tuyen dung - section 5*/
+.slide__content.slideCareers_5 {
+  box-shadow: rgb(0 0 0 / 41%) 0px 15px 45px -20px;
+  border-radius: 5px;
+  padding-top: 50px;
+}
+
+.contentCareers_5 {
+  padding: 0 30px;
+}
+
+.contentCareers_5>h1 {text-align: center;margin: 0;font-size: 35px;}
+
+.listPositionApply {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.position {
+  width: 50%;
+  margin-left: 0px;
+}
+
+.position_content {
+  margin: 15px;
+  padding: 20px 18px;
+  border-radius: 5px;
+  background-color: #f0eeee;
+}
+
+.position_content h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.position_content h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  margin-top: 26px;
+}
+
+.buttonDetails {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.buttonDetails a {
+  font-size: 15px;
 }
