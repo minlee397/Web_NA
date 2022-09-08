@@ -3644,7 +3644,8 @@ button.slick-next.slick-arrow {
   outline: none;
   color: #fff;
   background-color: #fba70b;
-  cursor: pointer;white-space: nowrap;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .newsInfomation span {
@@ -3658,13 +3659,19 @@ button.slick-next.slick-arrow {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;height: 455px;
+  margin-top: 15px;
+  height: 455px;
 }
-.newsBanner>div{width: 50%;}
+
+.newsBanner>div {
+  width: 50%;
+}
+
 .newsBanner_images {
   width: 100%;
   height: 100%;
 }
+
 .newsBanner_images::after {
   background-color: rgba(0, 0, 0, 0.35);
   position: absolute;
@@ -3675,29 +3682,32 @@ button.slick-next.slick-arrow {
   height: 100%;
   content: "";
 }
+
 .newsBanner_left {
   background-color: #efeeea;
   position: relative;
   margin-right: 10px;
 }
-.newsBanner_images >a{    
+
+.newsBanner_images>a {
   display: block;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-.newsBanner_images >a>img{ 
+.newsBanner_images>a>img {
   max-height: 100%;
-  object-fit: contain;    
+  object-fit: contain;
   -webkit-transition-duration: 800ms;
   transition-duration: 800ms;
 }
 
-.newsBanner_images:hover >a>img {
+.newsBanner_images:hover>a>img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
 .newsBanner_right {
   margin-left: 10px;
 }
@@ -3715,7 +3725,12 @@ button.slick-next.slick-arrow {
 .newsBanner_rightBottom {
   margin-top: 20px;
 }
-.newsBanner_right .newsBanner_images >a>img{max-height: unset; max-width: 100%;}
+
+.newsBanner_right .newsBanner_images>a>img {
+  max-height: unset;
+  max-width: 100%;
+}
+
 .newsBanner-content {
   position: absolute;
   bottom: 30px;
@@ -3793,17 +3808,30 @@ button.slick-next.slick-arrow {
 }
 
 .boxNew_blog {
-  
+
   width: 50%;
 }
-.boxNew_blog:first-child>div{padding-right: 15px;}
-.boxNew_blog:last-child>div {padding-left: 15px;}
+
+.boxNew_blog:first-child>div {
+  padding-right: 15px;
+}
+
+.boxNew_blog:last-child>div {
+  padding-left: 15px;
+}
 
 .newBlog_image {
   height: 250px;
-  background-color: #efeeea;    overflow: hidden;
+  background-color: #efeeea;
+  overflow: hidden;
 }
-.newBlog_image>img{max-height: 100%; max-height: 100%; object-fit: contain;}
+
+.newBlog_image>img {
+  max-height: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 .boxNew_blog span {
   margin-top: 25px;
   display: block;
@@ -3818,9 +3846,14 @@ button.slick-next.slick-arrow {
   font-size: 24px;
   font-weight: bold;
   line-height: 36px;
-  color: #544837;    line-height: normal;
+  color: #544837;
+  line-height: normal;
 }
-.boxNew_blog a:hover h2 {color: #0d13d7;}
+
+.boxNew_blog a:hover h2 {
+  color: #0d13d7;
+}
+
 .boxNew_blog h3 {
   font-size: 13px;
   font-weight: normal;
@@ -3840,14 +3873,28 @@ button.slick-next.slick-arrow {
   align-items: center;
   margin-bottom: 35px;
 }
-.listBlog .itemBlog:nth-child(2n+1){padding-right: 15px;}
-.listBlog .itemBlog:nth-child(2n){padding-left: 15px;}
+
+.listBlog .itemBlog:nth-child(2n+1) {
+  padding-right: 15px;
+}
+
+.listBlog .itemBlog:nth-child(2n) {
+  padding-left: 15px;
+}
+
 .itemBlog_image {
   width: 125px;
   height: 90px;
-  background-color: #efeeea;overflow: hidden;
+  background-color: #efeeea;
+  overflow: hidden;
 }
-.itemBlog_image>img{object-fit: contain; height: 100%; width: 100%;}
+
+.itemBlog_image>img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
 .itemBlog_content {
   width: calc(100% - 125px);
   padding-left: 20px;
@@ -3873,7 +3920,8 @@ button.slick-next.slick-arrow {
 .blog_Subscribe {
   background-color: #efeeea;
   height: 452px;
-  text-align: center;border-radius: 4px;
+  text-align: center;
+  border-radius: 4px;
 }
 
 .blog_Subscribe h1 {
@@ -3918,10 +3966,17 @@ button.slick-next.slick-arrow {
   overflow: hidden;
   padding: 20px 15px;
   border-radius: 4px;
-  display: flex;align-items: center; background: #0d13d7;
+  display: flex;
+  align-items: center;
+  background: #0d13d7;
 }
-.blog_adv>img{object-fit: contain; max-height: 100%;
-  max-width: 100%;}
+
+.blog_adv>img {
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+}
+
 /*Tin Tuc - section 3*/
 .PageNews .section-3 {
   background-image: url(../images/Img_TinTuc1.jpg);
@@ -3989,8 +4044,19 @@ button.slick-next.slick-arrow {
   width: 350px;
   background-color: #efeeea;
 }
-.carouselBlog_image>a{width: 100%; height: 100%; overflow: hidden; display: inline-block;}
-.carouselBlog_image>a>img{object-fit: contain;height: 100%; }
+
+.carouselBlog_image>a {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.carouselBlog_image>a>img {
+  object-fit: contain;
+  height: 100%;
+}
+
 .carouselBlog span {
   margin-top: 25px;
   display: block;
@@ -4088,7 +4154,13 @@ button.slick-next.slick-arrow {
   background-color: #efeeea;
   overflow: hidden;
 }
-.oldBlog_image>img{width: 100%; height: 100%; object-fit: contain;}
+
+.oldBlog_image>img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .boxOld_blog span {
   margin-top: 25px;
   display: block;
@@ -4308,7 +4380,11 @@ button.slick-next.slick-arrow {
   padding: 0 30px;
 }
 
-.contentCareers_5>h1 {text-align: center;margin: 0;font-size: 35px;}
+.contentCareers_5>h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 35px;
+}
 
 .listPositionApply {
   display: flex;
@@ -4349,4 +4425,97 @@ button.slick-next.slick-arrow {
 
 .buttonDetails a {
   font-size: 15px;
+}
+
+/*Tuyen dung chi tiet - Section 1*/
+.PagesCareersDetails .slide__content {
+  padding-top: 80px;
+}
+
+.BackPage a {
+  font-size: 15px;
+}
+
+.boxTitlePosition {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 50px;
+}
+
+.TitlePosition h1 {
+  margin: 0;
+  font-size: 60px;
+}
+
+.TitlePosition h2 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.TitlePosition {
+  width: 80%;
+}
+
+.container-CareersDetails_1 {
+  background-color: #fafafa;
+}
+
+.buttonApplyPosition button {
+  width: 200px;
+  padding: 10px;
+  border-radius: 100px;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  background: rgb(251, 167, 11);
+  /* color: rgb(255, 255, 255); */
+  transition: all 0.2s ease 0s;
+}
+
+.buttonApplyPosition:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease 0s;
+  color: rgb(255, 255, 255);
+}
+
+
+/*Tuyen dung chi tiet - Section 2*/
+.slideCareersDetails_2>h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.listDescribePosition {
+  margin-top: 50px;
+}
+
+.describe {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.describe h1 {
+  width: 170px;
+}
+
+.describe-content {
+  width: calc(100% - 281px);
+}
+
+.describe>div,
+.describe>h1 {
+  display: table-cell;
+  vertical-align: top;
+  font-size: 25px;
+}
+
+.describe-content ul li {
+  list-style: disc;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
