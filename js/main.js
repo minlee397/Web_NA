@@ -17,8 +17,15 @@
 
 	var widthWindow = window.outerWidth;
 	var slidesToShow = 2;
+	var listCarouselBlog = 3;
 	if (widthWindow < 768){
 		slidesToShow = 1;
+	}
+	if (widthWindow < 769){
+		listCarouselBlog = 2;
+	}
+	if (widthWindow < 768){
+		listCarouselBlog = 1;
 	}
 
 	$(".slick-carousel").slick({
@@ -51,11 +58,12 @@
 
 	$(".listCarouselBlog").slick({
 		infinite: true,
-		slidesToShow: 3, // Shows a three slides at a time
+		slidesToShow: listCarouselBlog, // Shows a three slides at a time
 		slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
 		//arrows: true,
 		autoplay: true,
 		autoplaySpeed: 2000
+		
 	});
 
 	$(".listCarouselCareers").slick({
