@@ -3732,6 +3732,11 @@ button.slick-next.slick-arrow {
   margin-bottom: 20px;
 }
 
+
+/*---------------------------------
+           SCREEN
+---------------------------------*/
+
 @media only screen and (max-width: 1440px) {
   .slide__text-heading h1 {
     font-size: 40px;
