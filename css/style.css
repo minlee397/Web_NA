@@ -3734,8 +3734,10 @@ button.slick-next.slick-arrow {
 
 /*Tuyen dung details - section 3*/
 
-.boxInfoApply {
-  padding: 30px;
+.slide__content.slideCareersDetails_3 {
+  padding: 60px 40px;
+  box-shadow: rgb(0 0 0 / 41%) 10px 10px 67px -20px;
+  border-radius: 10px;
 }
 
 .boxInfoApply h1 {
