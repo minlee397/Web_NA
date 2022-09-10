@@ -3732,7 +3732,88 @@ button.slick-next.slick-arrow {
   margin-bottom: 20px;
 }
 
+/*Tuyen dung details - section 3*/
 
+.boxInfoApply {
+  padding: 30px;
+}
+
+.boxInfoApply h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 35px;
+}
+
+.boxInfoSignUp {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+
+.boxInfoSignUp .inputControl {
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.inputControl label {
+  display: block;
+  font-size: 20px;
+}
+
+.inputControl label.fileCV {
+  color: #fba70b;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.inputControl input[type="text"] {
+  margin-top: 5px;
+  padding: 5px 5px;
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid #dedada;
+  outline: none;
+  font-size: 23px;
+}
+
+.inputControl input[type="text"]:focus {
+  border-bottom: 3px solid #fba70b;
+}
+
+.inputControl input[type="text"]:disabled {
+  background: none;
+}
+
+.inputControl 
+input[type="text"]::placeholder {
+  font-size: 15px;
+}
+
+.buttonInfoApply {
+  text-align: right;
+  padding-right: 50px;
+}
+
+.buttonInfoApply button {
+  width: 200px;
+  padding: 15px;
+  border-radius: 100px;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  background: rgb(251, 167, 11);
+  /* color: rgb(255, 255, 255); */
+  transition: all 0.2s ease 0s;
+}
+
+.buttonInfoApply button:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease 0s;
+  color: rgb(255, 255, 255);
+}
 /*---------------------------------
            SCREEN
 ---------------------------------*/
