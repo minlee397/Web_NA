@@ -4857,4 +4857,18 @@ input[type="text"]::placeholder {
     width: 100%;
     padding: 0;
   }
+
+  .TitleCareers img{width: 100%;}
+  .contentCareers_2{display: block;}
+  .PagesCareers .Careers_2-right {width:100%;}
+  .Careers_2-left h1{margin-right: 0; margin-bottom: 20px;}
+  .Careers_2-right>.item{margin-bottom: 20px;}
+  .PagesCareers .slide__content{padding: 0;}
+  .contentCareers_3{display: block;}
+  .contentCareers_3 h2{width: 100%; text-align: center;}
+  .PagesCareers .contentCareers_3 img{position: static; margin-bottom: 20px;}
+  .contentCareers_5{padding-left: 15px; padding-right: 15px;}
+  .PagesCareersDetails  .slideCareersDetails_2{padding-left: 0; padding-right: 0;}
+  .slide__content.slideCareersDetails_3{padding-left: 20px; padding-right: 20px;}
+  
 }
