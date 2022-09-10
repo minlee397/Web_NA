@@ -1220,7 +1220,8 @@ input[type="button"].btn-block {
   background-color: rgb(255, 255, 255);
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 29px 49px;
-  width: 1140px;
+  width: 100%;
+  max-width: 1140px;
   padding: 20px 0;
   max-height: 0;
   visibility: hidden;
@@ -3403,7 +3404,7 @@ button.slick-next.slick-arrow {
 }
 
 .TitleCareers {
-  text-align: center;
+  text-align: center; padding: 0 150px;
 }
 
 .TitleCareers h1 {
@@ -3432,16 +3433,16 @@ button.slick-next.slick-arrow {
 
 .contentCareers_2 {
   display: flex;
-  align-items: center;
+  align-items: center; margin-bottom: 30px;
 }
 
-.Careers_2-left {
-  width: 40%;
+.Careers_2-right {
+  width: calc(100% - 200px);
 }
 
 .Careers_2-left h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: 40px; margin-right: 30px;
 }
 
 .Careers_2-right .item h2 {
@@ -3472,7 +3473,7 @@ button.slick-next.slick-arrow {
 }
 
 .contentCareers_3 h2 {
-  width: 60%;
+  width:calc(100% - 500px);
 }
 
 .slideCareers_3 {
@@ -3480,7 +3481,7 @@ button.slick-next.slick-arrow {
 }
 
 .contentCareers_3 h2 {
-  font-size: 25px;
+  font-size: 25px;line-height: 40px;
 }
 
 /*Careers - section 4*/
@@ -3497,8 +3498,8 @@ button.slick-next.slick-arrow {
 
 .carouselCareers img {
   width: 1140px;
-  height: 600px;
-  background-size: cover;
+  /*height: 600px;
+  background-size: cover;*/
 }
 
 .carouselCareers {
@@ -3641,7 +3642,7 @@ button.slick-next.slick-arrow {
 
 /*Tuyen dung chi tiet - Section 1*/
 .PagesCareersDetails .slide__content {
-  padding-top: 80px;
+  padding-top:40px;
 }
 
 .BackPage a {
@@ -3651,12 +3652,12 @@ button.slick-next.slick-arrow {
 .boxTitlePosition {
   display: flex;
   align-items: flex-end;
-  margin-top: 50px;
+  
 }
 
-.TitlePosition h1 {
+.slideCareersDetails_1 h1 {
   margin: 0;
-  font-size: 60px;
+  font-size: 50px; display: block;margin-top: 50px;
 }
 
 .TitlePosition h2 {
@@ -3672,6 +3673,7 @@ button.slick-next.slick-arrow {
 
 .container-CareersDetails_1 {
   background-color: #fafafa;
+  border-radius: 4px; margin-top: 20px;
 }
 
 .buttonApplyPosition button {
@@ -4056,7 +4058,7 @@ input[type="text"]::placeholder {
   }
 
   .slick-initialized .slick-slide {
-    padding: 0px 40px;
+   /* padding: 0px 40px;*/
   }
 
   button.slick-prev.slick-arrow {
@@ -4147,7 +4149,7 @@ input[type="text"]::placeholder {
   }
 
   .slick-initialized .slick-slide {
-    padding: 0px 15px;
+    /*padding: 0px 15px;*/
   }
 
   .titleCarousel {
@@ -4245,6 +4247,10 @@ input[type="text"]::placeholder {
     width: 100%;
     height: auto;
   }
+  .PagesCareers .slide__content{padding-left: 30px; padding-right: 30px;}
+  .PagesCareers .carouselCareers img{width: 100%;}
+  .PagesCareers .listCarouselCareers button.slick-prev.slick-arrow{left:38px;}
+  .PagesCareers .listCarouselCareers button.slick-next.slick-arrow{right: -10px;}
 }
 
 @media only screen and (max-width: 1023px) {
@@ -4274,6 +4280,7 @@ input[type="text"]::placeholder {
   .navbar-nav .menu-level1 li:hover .menu-level2 {
     padding-top: 0;
   }
+  .section-1.sectionContact .slider-container{padding-bottom: 30px;}
 }
 
 @media only screen and (max-width: 768px) {
@@ -4375,6 +4382,22 @@ input[type="text"]::placeholder {
     padding: 0 7px;
   }
 
+  .PagesCareers .TitleCareers{padding: 0;}
+  .PagesCareers .slide__content{padding-left: 0; padding-right: 0;}
+  .PagesCareers .Careers_2-right {width: calc(100% - 150px);}
+  .PagesCareers .contentCareers_3 img{width: 350px; left: 20px;}
+  .contentCareers_3 h2 {width: calc(100% - 385px);}
+  .boxTitlePosition{display: block;}
+  .PagesCareers .position, .PagesCareersDetails .TitlePosition{width: 100%;}
+  .PagesCareers .position_content{margin-left: 0; margin-right: 0;}
+  .container-CareersDetails_1{margin-top: 30px; padding-bottom: 40px;}
+  .buttonApplyPosition{text-align: right; margin-top: 20px;}
+  .PagesCareersDetails .slide__content{padding-top: 40px;}
+  .PagesCareersDetails .describe, .PagesCareersDetails .describe>div, .PagesCareersDetails .describe>h1{display: block; width: 100%;}
+  .PagesCareersDetails .describe-content{padding-left: 30px;}
+  .PagesCareersDetails .boxInfoSignUp .inputControl{width: 100%;}
+  .PagesCareersDetails .inputControl input[type="text"]{width: 100%;}
+  .buttonInfoApply{padding-right: 0;}
 }
 
 @media only screen and (max-width: 767px) {
