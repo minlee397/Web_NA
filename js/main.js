@@ -101,4 +101,17 @@
 			$("#txtCVFile").val(input.files[0].name);
 		}
 	});
+	
+	$( "body" ).click(function() {
+		if (!$(event.target).closest('.navbar-nav').length) {
+			$(".menu-level1").css('display','none');
+		  }
+		
+	});
+	$( "#giaiphap" ).click(function() {
+		if($(".menu-level1").css('display')=="none")		
+			$(".menu-level1").css('display','block');				
+		else
+			$(".menu-level1").css('display','none');
+	});
 })(jQuery);

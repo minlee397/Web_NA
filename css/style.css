@@ -1108,15 +1108,16 @@ input[type="button"].btn-block {
     padding-bottom: 10px;
   }
 }
-
-.ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
+.ftco-navbar-light .navbar-nav>.nav-item>div{position: relative;}
+.ftco-navbar-light .navbar-nav>.nav-item >.nav-link, .ftco-navbar-light .navbar-nav>.nav-item>div >.nav-link {
   font-size: 14px;
   padding: 31px 15px;
   color: rgb(255, 255, 255);
   position: relative;
 }
-
-.ftco-navbar-light .navbar-nav>.nav-item>.nav-link:hover {
+.ftco-navbar-light .navbar-nav>.nav-item.giaiphap>div >a{padding-right: 30px;}
+.ic-down-light{position: absolute; right: 0; top: 32px; color: #fff; cursor: pointer; margin-right: 0;}
+.ftco-navbar-light .navbar-nav>.nav-item>.nav-link:hover, .ftco-navbar-light .navbar-nav>.nav-item>div >.nav-link:hover, .ic-down-light:hover {
   color: rgb(251, 167, 11);
 }
 
@@ -1223,9 +1224,9 @@ input[type="button"].btn-block {
   width: 100%;
   max-width: 1140px;
   padding: 20px 0;
-  max-height: 0;
-  visibility: hidden;
-  transition: max-height 1s ease-in;
+  max-height: 1000px;
+  transition:1s ease-in;
+  display: none;
 }
 
 .navbar-nav .menu-level1 li {
@@ -1265,11 +1266,6 @@ input[type="button"].btn-block {
   top: 19px;
 }
 
-.navbar-nav li:hover>.menu-level1 {
-  max-height: 1000px;
-  display: block;
-  visibility: visible;
-}
 
 .navbar-nav .menu-level1 .menu-level2 {
   display: none;
@@ -4847,7 +4843,6 @@ input[type="text"]::placeholder {
   .PageNews .bigBlog_content {
     padding-top: 40px;
   }
-
   .PageNews .listOldBlog {
     display: block;
     margin: 0;
