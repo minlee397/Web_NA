@@ -3193,7 +3193,7 @@ button.slick-next.slick-arrow {
   background-image: url(../images/Img_TinTuc1.jpg);
   background-attachment: fixed !important;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;background-position: center;
   height: 895px;
 }
 
