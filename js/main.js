@@ -89,4 +89,16 @@
 	$(".boxScrollTop").click(function(){
 		window.scrollTo({top: 0, behavior: 'smooth'});
 	});
+
+	$(".fileCV").click(function(){
+		$("#ctrFileCV").click();
+	})
+
+	$("#ctrFileCV").change(function(){
+		var input = this;
+		if(input.files != undefined && input.files.length > 0)
+		{
+			$("#txtCVFile").val(input.files[0].name);
+		}
+	});
 })(jQuery);
