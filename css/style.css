@@ -3961,6 +3961,9 @@ input[type="text"]::placeholder {
   font-style:italic;
 }
 
+.divFlowGroup{
+  position: relative;
+  width: 100%;}
 /*---------------------------------
            SCREEN
 ---------------------------------*/
