@@ -1053,6 +1053,7 @@ input[type="button"].btn-block {
 
 .ftco-section {
   background-color: rgb(13, 19, 215);
+  position: sticky; top: 0; width: 100%; z-index: 1;
 }
 
 .ftco-no-pt {
@@ -1116,7 +1117,7 @@ input[type="button"].btn-block {
   position: relative;
 }
 .ftco-navbar-light .navbar-nav>.nav-item.giaiphap>div >a{padding-right: 30px;}
-.ic-down-light{position: absolute; right: 0; top: 32px; color: #fff; cursor: pointer; margin-right: 0;}
+.ic-down-light{position: absolute; right:-10px; top: 22px; color: #fff; cursor: pointer; margin-right:0; padding:10px;}
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link:hover, .ftco-navbar-light .navbar-nav>.nav-item>div >.nav-link:hover, .ic-down-light:hover {
   color: rgb(251, 167, 11);
 }
@@ -1253,7 +1254,7 @@ input[type="button"].btn-block {
 .navbar-nav .menu-level1 li:hover a {
   color: rgb(84, 72, 55);
 }
-
+.navbar-nav .menu-level1 li:hover>a{color: #0d13d7;}
 .navbar-nav .menu-level1 li:hover .menu-level2 {
   display: inherit;
 }
@@ -3941,6 +3942,7 @@ input[type="text"]::placeholder {
   align-items: center;
   font-weight: bold;
   color: #fba70b;
+  margin-bottom: 20px;
 }
 
 .box-title i{
@@ -3975,7 +3977,7 @@ input[type="text"]::placeholder {
   border-top: 1px solid #e8e8e8;
   background-color:#fff;
   text-align:right;
-  font-style:italic;
+  font-style:italic;margin-top: 20px;
 }
 
 .divFlowGroup{
@@ -4193,7 +4195,8 @@ input[type="text"]::placeholder {
     padding-left: 10px;
     padding-right: 10px;
   }
-
+  .ftco-navbar-light .navbar-nav>.nav-item.giaiphap>div >a{padding:0.5rem 10px ;}
+  .ic-down-light{top:0;}
   .searchContent:hover .txtSearch {
     width: 190px;
   }
