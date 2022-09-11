@@ -3959,11 +3959,14 @@ input[type="text"]::placeholder {
   position: absolute;
   width: 252px;
   padding: 10px;
+     
   /* transform: translate(0px, 0px); */
 }
 
-.boxImage img{
-  width: 100%;
+.boxImage img, .boxImage video{
+  width: 100%; 
+  border-radius: 7px;
+  box-shadow: 0 0 20px rgb(2 59 109 / 10%);
   /* transform: translate(0px, 0px); */
 }
 

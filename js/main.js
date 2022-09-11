@@ -118,6 +118,7 @@
 	});
 
 
+
 	SetPositionImage();
 
 })(jQuery);
@@ -138,13 +139,15 @@ function SetPositionImage() {
 		for (let index = 0; index < dataGroupImage_1.length; index++) {
 			const element = dataGroupImage_1[index];
 			var boxImage = $(element).find(".boxImage");
-			var heightImage = $(boxImage).find("img").height();
-
+			var heightImage = $(boxImage).find("img").height() + 20;
+			if ($(boxImage).find("img") == undefined || $(boxImage).find("img").length == 0)
+				heightImage = $(boxImage).find("video").height() + 34;
+			boxImage.css("height", heightImage + "px");
 			if (fristLine) {
 				setPosition(boxImage, bestWidth, 0);
 				// Luu lai danh sach chieu cao cua dong dau tien
 				ListHighImage.push({
-					with: bestWidth,
+					width: bestWidth,
 					height: heightImage
 				});
 				bestWidth += 252;
@@ -158,24 +161,19 @@ function SetPositionImage() {
 					return prev.height < curr.height ? prev : curr;
 				});
 
-				setPosition(boxImage, bestWidth, objMax.height);
-				bestWidth += 252;
+				setPosition(boxImage, objMax.width, objMax.height);
 				objMax.height += heightImage;
-				if ((bestWidth + 252) >= WithContentImage_1) {
-					bestWidth = 0;
-					fristLine = false;
-				}
 			}
 
 
 		}
 
 		// Set lai kich thuoc chieu cao cua boxContent
-		var objMax = ListHighImage.reduce(function (prev, curr) {
-			return prev.height < curr.height ? prev : curr;
-		});
-		boxContentImage_1.css("height", objMax.height +"px");
-		boxContentImage_1.css("width", TotalWith +"px");
+		var maxHeight = Math.max.apply(Math, ListHighImage.map(function (o) {
+			return o.height;
+		}))
+		boxContentImage_1.css("height", maxHeight + "px");
+		boxContentImage_1.css("width", TotalWith + "px");
 	}
 }
 
