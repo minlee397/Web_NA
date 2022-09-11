@@ -104,11 +104,10 @@
 		}
 	});
 
-	$("body").click(function (event) {
-		if (!$(event.target).closest('.navbar-nav').length) {
+	$("body").click(function (event) {		
+		if (!$(event.target).closest('.ic-down-light').length) {
 			$(".menu-level1").css('display', 'none');
-		}
-
+		}		
 	});
 	$("#giaiphap").click(function () {
 		if ($(".menu-level1").css('display') == "none")
