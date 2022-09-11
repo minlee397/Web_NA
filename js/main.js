@@ -154,6 +154,7 @@
 	SetPositionImage("boxContentImage_1", "GroupImage_1");
 	SetPositionImage("boxContentImage_2", "GroupImage_2");
 	SetPositionImage("boxContentImage_3", "GroupImage_3");
+	SetPositionImage("boxContentImage_4", "GroupImage_4");
 
 })(jQuery);
 
