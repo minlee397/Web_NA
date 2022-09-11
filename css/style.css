@@ -3937,25 +3937,20 @@ input[type="text"]::placeholder {
 .box-title{
   padding:5px 15px;
   border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #fba70b;
 }
 
 .box-title i{
-  margin-right:5px;
+  font-size: 20px;
+  font-weight: normal;
 }
 
 .box-content{
   padding:5px 15px;
   background-color:#fff;
-}
-
-.box-content strong{
-  color:#666;
-  font-style:italic;
-  margin-right:5px;
-}
-
-.box-item{
-  margin-bottom:5px;
 }
 
 .box-footer{
