@@ -3969,6 +3969,7 @@ input[type="text"]::placeholder {
   width: 100%; 
   border-radius: 7px;
   box-shadow: 0 0 20px rgb(2 59 109 / 10%);
+  cursor: pointer;
   /* transform: translate(0px, 0px); */
 }
 
