@@ -3949,8 +3949,22 @@ input[type="text"]::placeholder {
 }
 
 .box-content{
-  padding:5px 15px;
   background-color:#fff;
+  position: relative;
+  margin: auto;
+}
+
+.boxImage{
+  display: block;
+  position: absolute;
+  width: 252px;
+  padding: 10px;
+  /* transform: translate(0px, 0px); */
+}
+
+.boxImage img{
+  width: 100%;
+  /* transform: translate(0px, 0px); */
 }
 
 .box-footer{
