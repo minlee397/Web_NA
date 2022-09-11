@@ -3963,7 +3963,10 @@ input[type="text"]::placeholder {
 
 .divFlowGroup{
   position: relative;
-  width: 100%;}
+  width: 100%;
+}
+.divFlowGroup .iconWorkflow{overflow: hidden;}
+.divFlowGroup .iconWorkflow>img{width: 100%; object-fit: contain;}
 /*---------------------------------
            SCREEN
 ---------------------------------*/
