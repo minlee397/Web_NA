@@ -133,7 +133,7 @@
 			IsImage = false;
 		}
 
-		if(linkurl != undefined && linkurl!= ""){
+		if (linkurl != undefined && linkurl != "") {
 			if (IsImage) {
 				$("#modalPreview").attr("src", linkurl);
 				$("#modalPreview").css("display", "block");
@@ -151,14 +151,16 @@
 		modal.style.display = "none";
 	}
 
-	SetPositionImage();
+	SetPositionImage("boxContentImage_1", "GroupImage_1");
+	SetPositionImage("boxContentImage_2", "GroupImage_2");
+	SetPositionImage("boxContentImage_3", "GroupImage_3");
 
 })(jQuery);
 
-function SetPositionImage() {
-	var boxContentImage_1 = $("#boxContentImage_1");
+function SetPositionImage(boxContentImage, GroupImage) {
+	var boxContentImage_1 = $("#" + boxContentImage);
 	var WithContentImage_1 = boxContentImage_1.width();
-	var GroupImage_1 = $("#GroupImage_1");
+	var GroupImage_1 = $("#" + GroupImage);
 	var dataGroupImage_1 = GroupImage_1.find(".divitem");
 
 	var fristLine = true;
