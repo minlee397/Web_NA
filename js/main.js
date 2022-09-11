@@ -104,7 +104,7 @@
 		}
 	});
 
-	$("body").click(function () {
+	$("body").click(function (event) {
 		if (!$(event.target).closest('.navbar-nav').length) {
 			$(".menu-level1").css('display', 'none');
 		}
@@ -117,7 +117,39 @@
 			$(".menu-level1").css('display', 'none');
 	});
 
+	var GroupImage_1 = $("#GroupImage_1");
+	var dataGroupImage_1 = GroupImage_1.find(".divitem");
 
+
+	var modal = document.getElementById("myModal");
+	var span = document.getElementsByClassName("close")[0];
+	$(dataGroupImage_1).click(function (e) {
+		$("body").css("overflow", "hidden");
+		modal.style.display = "block";
+		var IsImage = true;
+		var linkurl = $(e.currentTarget).find("img").attr("src");
+		if (linkurl == undefined || linkurl == "") {
+			linkurl = $(e.currentTarget).find("video").attr("src");
+			IsImage = false;
+		}
+
+		if(linkurl != undefined && linkurl!= ""){
+			if (IsImage) {
+				$("#modalPreview").attr("src", linkurl);
+				$("#modalPreview").css("display", "block");
+				$("#modalPreviewVideo").css("display", "none");
+			} else {
+				$("#modalPreviewVideo").attr("src", linkurl);
+				$("#modalPreview").css("display", "none");
+				$("#modalPreviewVideo").css("display", "block");
+			}
+		}
+	});
+
+	span.onclick = function () {
+		$("body").css("overflow", "auto");
+		modal.style.display = "none";
+	}
 
 	SetPositionImage();
 
