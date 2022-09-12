@@ -1196,7 +1196,8 @@ input[type="button"].btn-block {
   }
 }
 
-.ftco-navbar-light .navbar-nav>.nav-item.active>a, .ftco-navbar-light .navbar-nav>.nav-item.active>div>a {
+.ftco-navbar-light .navbar-nav>.nav-item.active>a,
+.ftco-navbar-light .navbar-nav>.nav-item.active>div>a {
   color: rgb(251, 167, 11);
 }
 
@@ -4259,8 +4260,9 @@ button.slick-next.slick-arrow {
     padding-right: 10px;
   }
 
-  
-  .searchContent .txtSearch, .searchContent:hover .txtSearch {
+
+  .searchContent .txtSearch,
+  .searchContent:hover .txtSearch {
     width: 150px;
   }
 
@@ -4510,6 +4512,7 @@ button.slick-next.slick-arrow {
     padding: 15px;
     background: rgb(0, 0, 0);
   }
+
   .ftco-navbar-light .navbar-nav>.nav-item.giaiphap>div>a {
     padding: 0.5rem 10px;
   }
@@ -4540,7 +4543,11 @@ button.slick-next.slick-arrow {
   .section-1.sectionContact .slider-container {
     padding-bottom: 30px;
   }
-  .searchContent .txtSearch, .searchContent:hover .txtSearch{width: 100%;}
+
+  .searchContent .txtSearch,
+  .searchContent:hover .txtSearch {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -5237,23 +5244,15 @@ button.slick-next.slick-arrow {
 /* The Modal (background) */
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
+  z-index: 100;
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -5271,6 +5270,7 @@ button.slick-next.slick-arrow {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .ModalImage img,
@@ -5278,6 +5278,28 @@ button.slick-next.slick-arrow {
   max-width: 100%;
   max-height: 100%;
   height: 80%;
+}
+
+.ModalImage span {
+  color: #aaaaaa;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  position:absolute;
+}
+
+.ModalImage .ic-left-light {
+  top: 50%;
+  left: 3%;
+}
+
+.ModalImage .ic-right-light {
+  top: 50%;
+  right: 3%;
+}
+
+.ModalImage span:hover {
+  color: #fff;
 }
 
 /* The Close Button */

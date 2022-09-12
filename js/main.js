@@ -1,5 +1,7 @@
 (function ($) {
 
+
+
 	"use strict";
 
 	$('nav .dropdown').hover(function () {
@@ -104,10 +106,10 @@
 		}
 	});
 
-	$("body").click(function (event) {		
+	$("body").click(function (event) {
 		if (!$(event.target).closest('.ic-down-light').length) {
 			$(".menu-level1").css('display', 'none');
-		}		
+		}
 	});
 	$("#giaiphap").click(function () {
 		if ($(".menu-level1").css('display') == "none")
@@ -116,39 +118,39 @@
 			$(".menu-level1").css('display', 'none');
 	});
 
-	var GroupImage_1 = $("#GroupImage_1");
-	var dataGroupImage_1 = GroupImage_1.find(".divitem");
-
-
 	var modal = document.getElementById("myModal");
 	var span = document.getElementsByClassName("close")[0];
-	$(dataGroupImage_1).click(function (e) {
-		$("body").css("overflow", "hidden");
-		modal.style.display = "block";
-		var IsImage = true;
-		var linkurl = $(e.currentTarget).find("img").attr("src");
-		if (linkurl == undefined || linkurl == "") {
-			linkurl = $(e.currentTarget).find("video").attr("src");
-			IsImage = false;
-		}
-
-		if (linkurl != undefined && linkurl != "") {
-			if (IsImage) {
-				$("#modalPreview").attr("src", linkurl);
-				$("#modalPreview").css("display", "block");
-				$("#modalPreviewVideo").css("display", "none");
-			} else {
-				$("#modalPreviewVideo").attr("src", linkurl);
-				$("#modalPreview").css("display", "none");
-				$("#modalPreviewVideo").css("display", "block");
-			}
-		}
-	});
-
 	span.onclick = function () {
 		$("body").css("overflow", "auto");
 		modal.style.display = "none";
 	}
+
+	var preEle = $("#prevImage");
+	var nextEle = $("#nextImage");
+	preEle.click(function () {
+		moveImage(false);
+	});
+
+	nextEle.click(function () {
+		moveImage(true);
+	});
+
+
+	var GroupImage_1 = $("#GroupImage_1");
+	var dataGroupImage_1 = GroupImage_1.find(".divitem");
+	configModal(dataGroupImage_1, modal);
+
+	var GroupImage_2 = $("#GroupImage_2");
+	var dataGroupImage_2 = GroupImage_2.find(".divitem");
+	configModal(dataGroupImage_2, modal);
+
+	var GroupImage_3 = $("#GroupImage_3");
+	var dataGroupImage_3 = GroupImage_3.find(".divitem");
+	configModal(dataGroupImage_3, modal);
+
+	var GroupImage_4 = $("#GroupImage_4");
+	var dataGroupImage_4 = GroupImage_4.find(".divitem");
+	configModal(dataGroupImage_4, modal);
 
 	SetPositionImage("boxContentImage_1", "GroupImage_1");
 	SetPositionImage("boxContentImage_2", "GroupImage_2");
@@ -213,4 +215,100 @@ function SetPositionImage(boxContentImage, GroupImage) {
 
 function setPosition(element, x, y) {
 	$(element).css("transform", "translate(" + x + "px, " + y + "px)")
+}
+
+function configModal(dataGroupImage, modal) {
+	$(dataGroupImage).click(function (e) {
+		$("body").css("overflow", "hidden");
+		modal.style.display = "block";
+		var IsImage = true;
+		var linkurl = $(e.currentTarget).find("img").attr("src");
+		if (linkurl == undefined || linkurl == "") {
+			linkurl = $(e.currentTarget).find("video").attr("src");
+			IsImage = false;
+		}
+
+		var boxImage = $(e.currentTarget).find(".boxImage");
+		var ItemId = boxImage.attr("data-itemid");
+		var ImgId = boxImage.attr("data-imgid");
+
+		if (linkurl != undefined && linkurl != "") {
+			if (IsImage) {
+				$("#modalPreview").attr("data-itemid", ItemId);
+				$("#modalPreview").attr("data-imgid", ImgId);
+				$("#modalPreview").attr("src", linkurl);
+
+				$("#modalPreview").css("display", "block");
+				$("#modalPreviewVideo").css("display", "none");
+				$("#modalPreviewVideo").attr("src", "");
+			} else {
+				$("#modalPreviewVideo").attr("data-itemid", ItemId);
+				$("#modalPreviewVideo").attr("data-imgid", ImgId);
+				$("#modalPreviewVideo").attr("src", linkurl);
+
+				$("#modalPreview").css("display", "none");
+				$("#modalPreviewVideo").css("display", "block");
+				$("#modalPreview").attr("src", "");
+			}
+		}
+	});
+}
+
+function moveImage(isNext) {
+	var IsImage = true;
+	var linkurl = $("#modalPreview").attr("src");
+	if (linkurl == undefined || linkurl == "") {
+		linkurl = $("#modalPreviewVideo").attr("src");
+		IsImage = false;
+	}
+
+	var ItemId = "";
+	var ImgId = "";
+	if (IsImage) {
+		ItemId = $("#modalPreview").attr("data-itemid");
+		ImgId = $("#modalPreview").attr("data-imgid");
+	} else {
+		ItemId = $("#modalPreviewVideo").attr("data-itemid");
+		ImgId = $("#modalPreviewVideo").attr("data-imgid");
+	}
+
+	var boxImage = $(".boxImage[data-itemid='" + ItemId + "'][data-imgid='" + ImgId + "']");
+	if (boxImage != undefined) {
+		var divItem = boxImage.parent();
+
+		var nextDivItem = divItem.next();
+		if (!isNext)
+			nextDivItem = divItem.prev();
+
+		if (nextDivItem != undefined && nextDivItem.length > 0) {
+			var nextBoxImage = nextDivItem.find(".boxImage");
+			var nextIsImage = true;
+			var nextLinkurl = nextDivItem.find("img").attr("src");
+			if (nextLinkurl == undefined || nextLinkurl == "") {
+				nextLinkurl = nextDivItem.find("video").attr("src");
+				nextIsImage = false;
+			}
+
+			var nextItemId = nextBoxImage.attr("data-itemid");
+			var nextImgId = nextBoxImage.attr("data-imgid");
+
+			if (nextIsImage) {
+				$("#modalPreview").attr("data-itemid", nextItemId);
+				$("#modalPreview").attr("data-imgid", nextImgId);
+				$("#modalPreview").attr("src", nextLinkurl);
+
+				$("#modalPreview").css("display", "block");
+				$("#modalPreviewVideo").css("display", "none");
+				$("#modalPreviewVideo").attr("src", "");
+			} else {
+				$("#modalPreviewVideo").attr("data-itemid", nextItemId);
+				$("#modalPreviewVideo").attr("data-imgid", nextImgId);
+				$("#modalPreviewVideo").attr("src", nextLinkurl);
+
+				$("#modalPreview").css("display", "none");
+				$("#modalPreviewVideo").css("display", "block");
+				$("#modalPreview").attr("src", "");
+			}
+		}
+	}
 }
